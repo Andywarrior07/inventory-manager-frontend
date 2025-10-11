@@ -2,6 +2,7 @@ interface Props {
   width?: number;
   height?: number;
   color?: string;
+  fill?: string;
   strokeWidth?: number;
   className?: string;
 
@@ -12,13 +13,14 @@ export const QRIcon = ({
   width = 24,
   height = 24,
   color = '#000000',
+  fill = 'none',
   strokeWidth = 1.5,
   className,
   ...props
 }: Props) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-      <g fill="none" stroke="currentColor" strokeWidth="1.5">
+    <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" className={className} {...props}>
+      <g fill={fill} stroke={color} strokeWidth={strokeWidth}>
         <path
           d="M3 6c0-1.414 0-2.121.44-2.56C3.878 3 4.585 3 6 3s2.121 0 2.56.44C9 3.878 9 4.585 9 6s0 2.121-.44 2.56C8.122 9 7.415 9 6 9s-2.121 0-2.56-.44C3 8.122 3 7.415 3 6Zm0 12c0-1.414 0-2.121.44-2.56C3.878 15 4.585 15 6 15s2.121 0 2.56.44C9 15.878 9 16.585 9 18s0 2.121-.44 2.56C8.122 21 7.415 21 6 21s-2.121 0-2.56-.44C3 20.122 3 19.415 3 18Z" />
         <path strokeLinecap="round" strokeLinejoin="round" d="M3 12h6m3-9v5" />

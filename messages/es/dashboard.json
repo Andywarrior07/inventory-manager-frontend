@@ -1,0 +1,25 @@
+{
+  "title": "Panel de Control",
+  "subtitle": "Resumen de tu colección de figuras",
+  "scanButton": "Escanear QR",
+  "card1": {
+    "title": "Total de figuras",
+    "description": "{franchises} franquicias diferentes",
+    "variant": "{percentage}% este mes"
+  },
+  "card2": {
+    "title": "Valor de Colección",
+    "description": "Promedio: ${amountAverage}",
+    "variant": "{percentage}% este mes"
+  },
+  "card3": {
+    "title": "Fuera de Lugar",
+    "description": "Figuras fuera de lugar",
+    "variantA": "Todo en orden",
+    "variantB": "Requiere atención"
+  },
+  "card4": {
+    "title": "Crecimiento",
+    "description": "Nuevas figuras este mes"
+  }
+}

@@ -39,14 +39,14 @@ export const Sidebar = () => {
     },
     {
       text: t('analytics'),
-      icon: <AnalyticsIcon color='#fff' />,
+      icon: <AnalyticsIcon color='#fff'/>,
       href: '/analytics',
     }
   ];
 
   return (
     <div className='hidden md:block text-white bg-transparent h-full flex-shrink-0'>
-      <div className='relative h-svh bg-[#181818] border-r border-white/10 backdrop-blur-md w-64 z-10 pt-5 pl-3'>
+      <div className='relative h-svh bg-neutral-900 border-r border-white/10 backdrop-blur-md w-64 z-10 pt-5 pl-3'>
         <nav className='min-h-0 flex flex-col flex-1 gap-2 overflow-auto px-2'>
           <MenuItems menuItems={menuItems} />
         </nav>

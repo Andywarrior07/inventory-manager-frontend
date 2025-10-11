@@ -1,5 +1,6 @@
-import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+
 import { QRIcon } from '@/components/icons/QRIcon';
 import { BoxIcon } from '@/components/icons/BoxIcon';
 import { MoneyBagIcon } from '@/components/icons/MoneyBagIcon';
@@ -32,7 +33,7 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {/* First card */}
         <div
-          className="bg-neutral-900 text-card-foreground flex flex-col gap-6 rounded-xl border border-neutral-800 py-6 shadow-sm relative overflow-hidden"
+          className="bg-neutral-900 text-zinc-50 flex flex-col gap-6 rounded-xl border border-neutral-800 py-6 shadow-sm relative overflow-hidden"
         >
           {/*  Card header */}
           <div className="flex items-center justify-between px-6">
@@ -47,13 +48,13 @@ export default function Dashboard() {
 
             <div className="text-sm text-neutral-400">{t('card1.description', { franchises: 3 })}</div>
 
-            <div className="text-sm font-semibold mt-2">{t('card1.variant', {percentage: '+12'})}</div>
+            <div className="text-sm font-semibold mt-2">{t('card1.variant', { percentage: '+12' })}</div>
           </div>
         </div>
 
         {/*  Second card */}
         <div
-          className="bg-neutral-900 text-card-foreground flex flex-col gap-6 rounded-xl border border-neutral-800 py-6 shadow-sm relative overflow-hidden"
+          className="bg-neutral-900 text-zinc-50 flex flex-col gap-6 rounded-xl border border-neutral-800 py-6 shadow-sm relative overflow-hidden"
         >
           {/*  Card header */}
           <div className="flex items-center justify-between px-6">
@@ -68,13 +69,13 @@ export default function Dashboard() {
 
             <div className="text-sm text-neutral-400">{t('card2.description', { amountAverage: 95 })}</div>
 
-            <div className="text-sm font-semibold mt-2">{t('card2.variant', {percentage: '+8.2'})}</div>
+            <div className="text-sm font-semibold mt-2">{t('card2.variant', { percentage: '+8.2' })}</div>
           </div>
         </div>
 
         {/*  Third card */}
         <div
-          className="bg-neutral-900 text-card-foreground flex flex-col gap-6 rounded-xl border border-neutral-800 py-6 shadow-sm relative overflow-hidden"
+          className="bg-neutral-900 text-zinc-50 flex flex-col gap-6 rounded-xl border border-neutral-800 py-6 shadow-sm relative overflow-hidden"
         >
           {/*  Card header */}
           <div className="flex items-center justify-between px-6">
@@ -89,13 +90,14 @@ export default function Dashboard() {
 
             <div className="text-sm text-neutral-400">{t('card3.description')}</div>
 
-            <div className="text-sm font-semibold mt-2">{t(figuresOutOfPlace > 0 ? 'card3.variantB': 'card3.variantA')}</div>
+            <div className="text-sm font-semibold mt-2">{t(figuresOutOfPlace > 0 ? 'card3.variantB' :
+              'card3.variantA')}</div>
           </div>
         </div>
 
         {/*  Fourth card */}
         <div
-          className="bg-neutral-900 text-card-foreground flex flex-col gap-6 rounded-xl border border-neutral-800 py-6 shadow-sm relative overflow-hidden"
+          className="bg-neutral-900 text-zinc-50 flex flex-col gap-6 rounded-xl border border-neutral-800 py-6 shadow-sm relative overflow-hidden"
         >
           {/*  Card header */}
           <div className="flex items-center justify-between px-6">

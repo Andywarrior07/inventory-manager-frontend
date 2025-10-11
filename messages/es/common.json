@@ -1,0 +1,9 @@
+{
+  "sortBy": {
+    "name": "Nombre",
+    "releaseYear": "Año de lanzamiento",
+    "franchise": "Franquicia",
+    "manufacturer": "Fabricante",
+    "currentValue": "Valor actual"
+  }
+}
